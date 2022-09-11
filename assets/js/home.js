@@ -1,18 +1,20 @@
-let swiper = new Swiper(".mySwiper", {
-  loop: true,
-});
+$(function() {
+  let swiper = new Swiper(".mySwiper", {
+    loop: true,
+  });
+  
+  $('input').focus(function(){
+    $(this).parents('.form-group').addClass('focused');
+  });
+  
+  $('input').blur(function(){
+    var inputValue = $(this).val();
+    if ( inputValue == "" ) {
+      $(this).removeClass('filled');
+      $(this).parents('.form-group').removeClass('focused');  
+    } else {
+      $(this).addClass('filled');
+    }
+  })
+})
 
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 4,
-//   spaceBetween: 30,
-//   loop: true,
-//   loopFillGroupWithBlank: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });

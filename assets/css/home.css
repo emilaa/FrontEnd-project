@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #top-site-area {
   background-color: black;
 }
@@ -281,6 +285,7 @@
 }
 
 #intro-slider {
+  background-color: #F3F3F4;
   padding-top: 80px;
 }
 
@@ -343,6 +348,7 @@
 }
 
 #site-info {
+  background-color: #F3F3F4;
   position: relative;
   padding-top: 80px;
 }
@@ -355,8 +361,9 @@
 #site-info .first-info {
   width: 100%;
   height: 100px;
-  background-color: white;
-  border: 1px solid grey;
+  background-color: #F3F3F4;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -407,6 +414,7 @@
 }
 
 #product-card {
+  background-color: #F3F3F4;
   padding-top: 80px;
 }
 
@@ -429,7 +437,8 @@
   z-index: 1;
 }
 
-#product-card h3, #product-card p {
+#product-card h3,
+#product-card p {
   color: white;
 }
 
@@ -476,6 +485,7 @@
 }
 
 #product-card-2 {
+  background-color: #F3F3F4;
   padding-top: 120px;
 }
 
@@ -504,77 +514,253 @@
   z-index: 2;
 }
 
-#product-card-2 .product-name h4, #product-card-2 .product-name p {
+#product-card-2 .product-name h4,
+#product-card-2 .product-name p {
   color: white;
 }
 
-#product-slider {
-  padding-top: 280px;
+#banner {
+  background-color: #F3F3F4;
+  padding-top: 80px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-#product-slider .my-container {
+#banner .my-container {
   width: 97%;
-  margin-left: 23px;
+  margin: auto;
 }
 
-#product-slider .swiper {
+#banner .banner-img {
+  width: 100%;
+  height: 786.4px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#banner .banner-img img:nth-child(2) {
+  width: 1200px;
+  height: 600px;
+  left: 135px;
+  top: 100px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+#banner .banner-img img {
+  position: absolute;
   width: 100%;
   height: 100%;
 }
 
-#product-slider .swiper-slide {
+#banner .banner-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
   text-align: center;
-  font-size: 18px;
-  background: #fff;
+  z-index: 99;
+}
+
+#banner .banner-info i {
+  color: white;
+  font-size: 40px;
+}
+
+#banner .banner-info h1 {
+  color: white;
+}
+
+#banner .banner-info .h-1 {
+  font-size: 80px;
+}
+
+#banner .banner-info .h-2 {
+  padding-top: 20px;
+}
+
+#contact {
+  background-color: #F3F3F4;
+  padding-top: 80px;
+}
+
+#contact .my-container {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  background-color: #283593;
+}
+
+#contact .info {
+  width: 31.5%;
+  margin: auto;
+}
+
+#contact .icon {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#product-slider .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 434.5px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
-}
-
-#product-slider .tab-menu .tab-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid black;
-  height: 50px;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: cornflowerblue;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  left: 45%;
+  top: -45px;
 }
 
-#product-slider .tab-menu .tab-header div {
+#contact .icon i {
+  font-size: 40px;
+}
+
+#contact h1, #contact p {
+  color: white;
+}
+
+#contact .form-wrapper {
+  max-width: 31.5%;
+  min-width: 300px;
+  margin: 15px auto;
+}
+
+#contact .form-wrapper i {
+  color: white;
   font-size: 25px;
-  font-weight: bold;
+}
+
+#contact .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#contact .form-group {
+  position: relative;
+}
+
+#contact .form-group + .form-group {
+  margin-top: 30px;
+}
+
+#contact .form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #fff;
+  z-index: 10;
+  -webkit-transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  transition: transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+
+#contact .focused .form-label {
+  -webkit-transform: translateY(-125%);
+          transform: translateY(-125%);
+  font-size: .75em;
+}
+
+#contact .form-group {
+  width: 90%;
+}
+
+#contact .form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  -webkit-transition: -webkit-box-shadow 150ms ease-out;
+  transition: -webkit-box-shadow 150ms ease-out;
+  transition: box-shadow 150ms ease-out;
+  transition: box-shadow 150ms ease-out, -webkit-box-shadow 150ms ease-out;
+  caret-color: white;
+  color: white;
+}
+
+#contact .form-input:focus {
+  -webkit-box-shadow: 0 1px 0 0 white;
+          box-shadow: 0 1px 0 0 white;
+}
+
+#app .my-container {
+  width: 100%;
+  height: 130px;
+  background-color: #F3F3F4;
+}
+
+#app .download-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+  gap: 15px;
   cursor: pointer;
-  height: 100%;
-  padding: 5px 10px 0 10px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
-#product-slider .tab-menu .tab-body {
-  border: 1px solid black;
-  padding: 10px;
+#app .download-app i {
+  font-size: 30px;
 }
 
-#product-slider .tab-menu .active {
-  background-color: aqua;
-  color: red;
+#app .line {
+  border-left: 1px solid black;
+  height: 80px;
+}
+
+#site-about {
+  background-color: black;
+}
+
+#site-about .my-container {
+  width: 97%;
+  height: 400px;
+  margin: auto;
+  background-color: black;
+}
+
+#site-about .about p:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+#site-about h6, #site-about p {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-left: 40px;
+  margin-top: 30px;
+  color: white;
+}
+
+#site-about span {
+  float: right;
+  color: white;
 }
 /*# sourceMappingURL=home.css.map */
