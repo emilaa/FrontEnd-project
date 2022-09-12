@@ -284,8 +284,165 @@ body {
   visibility: hidden;
 }
 
+#scroll-section {
+  background-color: #283593;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#scroll-section .my-container {
+  width: 97%;
+  height: 50px;
+  background-color: #283593;
+  margin-left: 23px;
+}
+
+#scroll-section img {
+  padding-top: 8px;
+}
+
+#scroll-section .inActive {
+  display: none;
+}
+
+#scroll-section nav {
+  position: absolute;
+  right: 0;
+}
+
+#scroll-section .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3px;
+}
+
+#scroll-section .btn li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+#scroll-section .btn li:hover .home {
+  height: 130px;
+  width: 200px;
+}
+
+#scroll-section .btn li:hover .home li {
+  text-align: left;
+}
+
+#scroll-section .btn li:hover .shop {
+  height: 170px;
+  width: 200px;
+}
+
+#scroll-section .btn li:hover .categories {
+  height: 270px;
+  width: 1000px;
+}
+
+#scroll-section .btn li:hover .categories li {
+  text-align: left;
+}
+
+#scroll-section .btn li:hover a::before {
+  visibility: visible;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+#scroll-section .btn li .home {
+  height: 130px;
+  width: 200px;
+}
+
+#scroll-section .btn li .shop {
+  height: 170px;
+  width: 200px;
+}
+
+#scroll-section .btn li .categories {
+  position: absolute;
+  right: 0;
+  height: 270px;
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 150px;
+  text-align: left;
+}
+
+#scroll-section .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  top: 57px;
+  background-color: whitesmoke;
+  height: 0;
+  line-height: 40px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+#scroll-section .btn li .submenu > li {
+  display: block;
+  text-align: left;
+}
+
+#scroll-section .btn li .submenu a {
+  color: black;
+  margin-top: 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#scroll-section .btn li .submenu a:hover {
+  text-decoration: none;
+}
+
+#scroll-section .btn li .submenu .product1 {
+  padding-top: 20px;
+}
+
+#scroll-section .btn li .submenu .product1 h5 {
+  text-align: left;
+}
+
+#scroll-section .btn li .hov {
+  font-size: 18px;
+  color: white;
+  display: block;
+  padding: 0 7px 0 7px;
+  margin: 0 0 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+#scroll-section .btn li .hov::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -20px;
+  left: 0px;
+  background-color: orange;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  visibility: hidden;
+}
+
 #intro-slider {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding-top: 80px;
 }
 
@@ -348,7 +505,7 @@ body {
 }
 
 #site-info {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   position: relative;
   padding-top: 80px;
 }
@@ -361,7 +518,7 @@ body {
 #site-info .first-info {
   width: 100%;
   height: 100px;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -414,7 +571,7 @@ body {
 }
 
 #product-card {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding-top: 80px;
 }
 
@@ -485,7 +642,7 @@ body {
 }
 
 #product-card-2 {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding-top: 120px;
 }
 
@@ -520,7 +677,7 @@ body {
 }
 
 #banner {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding-top: 80px;
   position: relative;
   top: 0;
@@ -592,7 +749,7 @@ body {
 }
 
 #contact {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding-top: 80px;
 }
 
@@ -633,7 +790,8 @@ body {
   font-size: 40px;
 }
 
-#contact h1, #contact p {
+#contact h1,
+#contact p {
   color: white;
 }
 
@@ -680,7 +838,7 @@ body {
 #contact .focused .form-label {
   -webkit-transform: translateY(-125%);
           transform: translateY(-125%);
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 #contact .form-group {
@@ -711,7 +869,7 @@ body {
 #app .my-container {
   width: 100%;
   height: 130px;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
 }
 
 #app .download-app {
@@ -730,7 +888,18 @@ body {
   font-size: 30px;
 }
 
-#app .line {
+#app .liner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#app .liner .line {
   border-left: 1px solid black;
   height: 80px;
 }
@@ -751,7 +920,8 @@ body {
   color: orange;
 }
 
-#site-about h6, #site-about p {
+#site-about h6,
+#site-about p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-left: 40px;
