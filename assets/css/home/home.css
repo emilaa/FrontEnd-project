@@ -648,7 +648,7 @@ body {
 
 #product-card-2 .my-container {
   width: 97%;
-  margin-left: 23px;
+  margin: auto;
 }
 
 #product-card-2 .card {
@@ -676,9 +676,172 @@ body {
   color: white;
 }
 
+#tab-menu {
+  margin-top: 80px;
+  background-color: black;
+  height: 260px;
+}
+
+#tab-menu .my-container {
+  width: 97%;
+  margin: auto;
+}
+
+#tab-menu h2 {
+  color: white;
+  padding-top: 30px;
+}
+
+#tab-menu .tab {
+  overflow: hidden;
+}
+
+#tab-menu .tab button {
+  background-color: inherit;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#tab-menu .tab button:hover {
+  background-color: white;
+  color: black;
+}
+
+#tab-menu .tab button.active {
+  background-color: white;
+  color: black;
+}
+
+#tab-menu .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  color: white;
+}
+
+#tab-menu .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#tab-menu .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#tab-menu .swiper-slide span {
+  color: black;
+}
+
+#tab-menu .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  padding-top: 30px;
+}
+
+#tab-menu .product-info {
+  color: #31333c;
+  position: absolute;
+  left: 20px;
+}
+
+#tab-menu .stars {
+  position: absolute;
+  color: #edb867;
+  left: 20px;
+}
+
+#tab-menu .card-line {
+  border: 0.5px solid #ebebeb;
+  width: 288px;
+  position: absolute;
+  right: 0px;
+  bottom: 38px;
+}
+
+#tab-menu .price {
+  position: absolute;
+  bottom: 130px;
+  left: 10px;
+  width: 90px;
+}
+
+#tab-menu .price p {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px #757575;
+          box-shadow: 1px 1px #757575;
+}
+
+#tab-menu .heart_icon {
+  color: #757575;
+  position: absolute;
+  left: 11px;
+  bottom: 12px;
+}
+
+#tab-menu .eye_icon {
+  color: #757575;
+  position: absolute;
+  right: 11px;
+  bottom: 12px;
+}
+
+#tab-menu .card-body {
+  width: 100%;
+  height: 141px;
+}
+
+#tab-menu .card-body .basket_icon {
+  background-color: #283593;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 90px;
+  right: 10px;
+}
+
+#tab-menu .card-body .basket_icon .basket-icon {
+  color: white;
+  position: absolute;
+  right: 18px;
+  bottom: 19px;
+  font-size: 22px;
+}
+
+#tab-menu .card-body .basket-icon {
+  color: white;
+  position: absolute;
+  right: 30px;
+  font-size: 30px;
+}
+
 #banner {
   background-color: #f3f3f4;
-  padding-top: 80px;
+  margin-top: 500px;
   position: relative;
   top: 0;
   left: 0;
@@ -746,6 +909,128 @@ body {
 
 #banner .banner-info .h-2 {
   padding-top: 20px;
+}
+
+#foot-slider {
+  background-color: whitesmoke;
+  height: 300px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#foot-slider h1 {
+  padding-bottom: 0;
+}
+
+#foot-slider .carousell-section {
+  padding-top: 0;
+}
+
+#foot-slider .swiper {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#foot-slider .swiper-slide {
+  width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+#foot-slider .swiper-slide h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #aa9b9b;
+}
+
+#foot-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0.5rem !important;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+#foot-slider .swiper-button-next {
+  right: 4% !important;
+  top: 46% !important;
+}
+
+#foot-slider .swiper-button-prev {
+  left: 4% !important;
+  top: 46% !important;
+}
+
+#foot-slider .carousell-section {
+  padding-top: 70px;
+  position: relative;
+}
+
+#foot-slider .component-section {
+  padding: 50px;
+}
+
+#foot-slider .component-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#foot-slider .component-card {
+  position: relative;
+  width: 31.5%;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+#foot-slider .component-card .component-text {
+  padding-left: 90px;
+}
+
+#foot-slider .shop-iconn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #283593;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: -35px;
+  left: 20px;
 }
 
 #contact {
