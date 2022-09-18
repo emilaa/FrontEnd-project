@@ -9,279 +9,533 @@ body {
   overflow-x: hidden;
 }
 
-#top-site-area {
+#top-area {
   background-color: black;
 }
 
-#top-site-area .my-container {
+#top-area .my-container {
   width: 97%;
-  height: 45px;
-  background-color: black;
-  margin-left: 23px;
+  margin: auto;
 }
 
-#top-site-area p {
+#top-area .my-container .welcome p {
   color: white;
-  padding-top: 8px;
+  padding-top: 10px;
+  margin-right: 10px;
 }
 
-#top-site-area .dropdown {
+#top-area .my-container .my-btn {
+  width: 100px;
+  height: 45px;
+  padding-top: 10px;
+  background-color: black;
+  border-top: none;
+  border-bottom: none;
+}
+
+#top-area .my-container .flag-menu li img {
+  width: 26px;
+  height: 26px;
+}
+
+#top-area .my-container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+#top-area .my-container .icons div {
+  width: 50px;
+  height: 45px;
+  border: 1px solid gray;
+  border-top: none;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+#top-area .my-container .icons div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+#top-area .my-container .icons div i {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+}
+
+#top-area .my-container .icons div sup {
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 4px;
+  top: -15px;
+  right: 5px;
+  background-color: coral;
+}
+
+#top-area .my-container .icons div:nth-child(1) {
+  border-left: none;
+}
+
+#top-area .my-container .icons .prof-drop {
+  width: 50px;
+  padding: 0 40px;
+  border-top: none;
+  border: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+#top-area .my-container .icons .prof-drop i {
+  color: #000;
+}
+
+#top-area .my-container .icons .prof-drop a {
+  padding-left: 70px;
+}
+
+#center-area {
+  background-color: #f3f3f4;
+}
+
+#center-area .my-container {
+  width: 97%;
+  margin: auto;
+}
+
+#center-area .my-container .head {
+  height: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#center-area .my-container .head img {
+  position: absolute;
+}
+
+#center-area .my-container .input {
+  height: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#center-area .my-container .input input {
+  width: 550px;
+  height: 40px;
+  right: 0;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  position: absolute;
   padding-left: 20px;
 }
 
-#top-site-area .dropdown .dropdown-menu span {
-  padding-left: 10px;
+#center-area .my-container .input i {
+  position: absolute;
+  right: 15px;
 }
 
-#top-site-area .dropdown .dropdown-menu img {
-  width: 30px;
-  height: 30px;
+#navbar-area {
+  background-color: #283593;
+  background-color: #283593;
+  z-index: 2;
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-#top-site-area .dropdown button {
-  background-color: black;
-  padding-top: 8px;
-  width: 95px;
-  height: 45px;
+#navbar-area nav {
+  float: inherit !important;
 }
 
-#top-site-area .user {
-  position: relative;
+#navbar-area .my-container {
+  width: 97%;
+  margin: auto;
+}
+
+#navbar-area .my-container nav {
+  margin-left: 20px;
+}
+
+#navbar-area .my-container .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-#top-site-area .user .shop-icon {
-  width: 40px;
-  height: 45px;
-  border: 1px solid grey;
-  position: absolute;
-  right: 80px;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
+#navbar-area .my-container .btn .admin {
+  background-color: #ff5722;
+  width: 125px;
+  height: 100%;
 }
 
-#top-site-area .user .shopping {
+#navbar-area .my-container .btn li {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+  z-index: 2;
+}
+
+#navbar-area .my-container .btn li .nav-a {
   color: white;
-  font-size: 20px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-}
-
-#top-site-area .user .heart-icon {
-  width: 40px;
-  height: 45px;
-  border: 1px solid grey;
-  position: absolute;
-  right: 40px;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
-}
-
-#top-site-area .user .heart {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  left: 8px;
-  top: 10px;
-}
-
-#top-site-area .user .user-img {
-  width: 40px;
-  height: 45px;
-  border: 1px solid grey;
-  position: absolute;
-  right: 0;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
-}
-
-#top-site-area .user img {
-  width: 25px;
-  height: 25px;
-  border-radius: 50px;
-  position: absolute;
-  top: 8px;
-  left: 7px;
-}
-
-#logo-search {
+  display: block;
+  text-decoration: none;
   position: relative;
-  background-color: whitesmoke;
+  margin-top: 15px;
+  padding-bottom: 10px;
 }
 
-#logo-search .my-container {
-  width: 97%;
-  height: 100px;
-  background-color: whitesmoke;
-  margin-left: 23px;
-}
-
-#logo-search .logo img {
-  padding-top: 30px;
-}
-
-#logo-search input {
-  width: 500px;
-  height: 45px;
-  float: right;
-  margin-top: 25px;
-  padding-left: 10px;
-  outline: none;
-  border: none;
-}
-
-#logo-search i {
+#navbar-area .my-container .btn li .nav-a::before {
+  content: "";
   position: absolute;
-  right: 55px;
-  top: 40px;
-  color: grey;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #ff5722;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  visibility: hidden;
 }
 
-#navbar {
-  background-color: #283593;
+#navbar-area .my-container .btn li:hover .home {
+  height: 120px;
+  z-index: 2;
 }
 
-#navbar .my-container {
-  width: 97%;
-  height: 50px;
-  background-color: #283593;
-  margin-left: 23px;
+#navbar-area .my-container .btn li:hover .submenu {
+  height: 160px;
+  z-index: 2;
 }
 
-#navbar nav {
-  position: absolute;
-  left: 0;
+#navbar-area .my-container .btn li:hover .categori {
+  height: 250px;
+  z-index: 2;
 }
 
-#navbar .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3px;
-}
-
-#navbar .btn li {
-  list-style: none;
-  margin-right: 15px;
-}
-
-#navbar .btn li:hover .home {
-  height: 130px;
-  width: 200px;
-}
-
-#navbar .btn li:hover .home li {
-  text-align: left;
-}
-
-#navbar .btn li:hover .shop {
-  height: 170px;
-  width: 200px;
-}
-
-#navbar .btn li:hover .categories {
-  height: 270px;
-  width: 1000px;
-}
-
-#navbar .btn li:hover .categories li {
-  text-align: left;
-}
-
-#navbar .btn li:hover a::before {
+#navbar-area .my-container .btn li:hover a::before {
   visibility: visible;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-#navbar .btn li .home {
-  height: 130px;
-  width: 200px;
-}
-
-#navbar .btn li .shop {
-  height: 170px;
-  width: 200px;
-}
-
-#navbar .btn li .categories {
-  height: 270px;
-  width: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 150px;
-  text-align: left;
-}
-
-#navbar .btn li .submenu {
+#navbar-area .my-container .btn li .home {
   overflow: hidden;
   position: absolute;
-  top: 57px;
-  background-color: whitesmoke;
+  margin-top: 10px;
+  background-color: white;
   height: 0;
+  width: 150px;
   line-height: 40px;
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
-  border-radius: 5px;
-  z-index: 2;
-}
-
-#navbar .btn li .submenu > li {
-  display: block;
   text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
 }
 
-#navbar .btn li .submenu a {
-  color: black;
-  margin-top: 20px;
+#navbar-area .my-container .btn li .home a {
+  color: #000;
   font-size: 16px;
   text-decoration: none;
 }
 
-#navbar .btn li .submenu a:hover {
-  text-decoration: none;
-}
-
-#navbar .btn li .submenu .product1 {
-  padding-top: 20px;
-}
-
-#navbar .btn li .submenu .product1 h5 {
-  text-align: left;
-}
-
-#navbar .btn li .hov {
-  font-size: 18px;
-  color: white;
-  display: block;
-  padding: 0 7px 0 7px;
-  margin: 0 0 10px;
-  text-decoration: none;
-  position: relative;
-}
-
-#navbar .btn li .hov::before {
-  content: "";
+#navbar-area .my-container .btn li .submenu {
+  overflow: hidden;
   position: absolute;
-  width: 100%;
-  height: 5px;
-  bottom: -20px;
-  left: 0px;
-  background-color: orange;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 165px;
+  line-height: 40px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+#navbar-area .my-container .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#navbar-area .my-container .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -200px;
+  border-radius: 10px;
+}
+
+#navbar-area .my-container .btn li .categori table td {
+  border: none;
+}
+
+#navbar-area .my-container .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+
+#navbar-area .my-container .btn li .categori table th:hover {
+  color: #000;
+}
+
+#navbar-area .my-container .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+
+#navbar-area .inActive {
+  display: none;
+}
+
+#navbar-area .head {
+  height: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar-area .head img {
+  position: absolute;
+  color: white !important;
+}
+
+#navbar-area nav {
+  float: right;
+}
+
+#navbar-area .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar-area .btn .admin {
+  background-color: #ff5722;
+  width: 125px;
+  height: 60px;
+  padding-top: 4px;
+  margin-right: 0;
+}
+
+#navbar-area .btn li {
+  display: inline-block;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  -webkit-transform: scale(0, 0);
-          transform: scale(0, 0);
-  visibility: hidden;
+  margin-right: 25px;
+}
+
+#navbar-area .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+#navbar-area .btn li .home {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+#navbar-area .btn li .home a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#navbar-area .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+#navbar-area .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#navbar-area .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -220px;
+  border-radius: 10px;
+}
+
+#navbar-area .btn li .categori table td {
+  border: none;
+}
+
+#navbar-area .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+
+#navbar-area .btn li .categori table th:hover {
+  color: #000;
+}
+
+#navbar-area .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.drop-show {
+  display: block !important;
+}
+
+.categoriess {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .home {
+    position: inherit !important;
+    display: none;
+  }
+  .shop {
+    display: none;
+  }
+  .submenu {
+    position: inherit !important;
+  }
+  .nav-a {
+    color: #000 !important;
+    text-align: left !important;
+  }
+  .categori {
+    display: none !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    height: 100% !important;
+  }
+  #black-area .container .btn li:hover .submenu {
+    overflow: auto !important;
+  }
+  .dropdown-btnn {
+    display: block;
+  }
+  .dropdown-ul {
+    display: none;
+  }
+  .offcanvas-header {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
 }
 
 #scroll-section {
@@ -296,57 +550,110 @@ body {
 
 #scroll-section .my-container {
   width: 97%;
-  height: 50px;
-  background-color: #283593;
-  margin-left: 23px;
-}
-
-#scroll-section img {
-  padding-top: 8px;
+  margin: auto;
 }
 
 #scroll-section .inActive {
   display: none;
 }
 
-#scroll-section nav {
-  position: absolute;
-  right: 0;
+#scroll-section .head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#scroll-section .head img {
+  color: white !important;
+}
+
+#scroll-section .scroll-body {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+#scroll-section .offcanvas-body {
+  -webkit-box-flex: 0 !important;
+      -ms-flex-positive: 0 !important;
+          flex-grow: 0 !important;
+}
+
+#scroll-section .offcanvas {
+  width: 100% !important;
+}
+
+#scroll-section .offcanvas-header {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
 }
 
 #scroll-section .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2vw !important;
+  padding: 0;
+  margin: 0;
+}
+
+#scroll-section .btn .admin {
+  background-color: #ff5722;
+  width: 125px;
+  height: 60px;
+  padding-top: 4px;
+  margin-right: 0;
 }
 
 #scroll-section .btn li {
-  list-style: none;
-  margin-right: 15px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+
+#scroll-section .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+#scroll-section .btn li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #ff5722;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  visibility: hidden;
 }
 
 #scroll-section .btn li:hover .home {
-  height: 130px;
-  width: 200px;
-}
-
-#scroll-section .btn li:hover .home li {
-  text-align: left;
+  height: 120px;
 }
 
 #scroll-section .btn li:hover .shop {
-  height: 170px;
-  width: 200px;
+  height: 160px;
 }
 
-#scroll-section .btn li:hover .categories {
-  height: 270px;
-  width: 1000px;
-}
-
-#scroll-section .btn li:hover .categories li {
-  text-align: left;
+#scroll-section .btn li:hover .categori {
+  height: 250px;
 }
 
 #scroll-section .btn li:hover a::before {
@@ -356,89 +663,86 @@ body {
 }
 
 #scroll-section .btn li .home {
-  height: 130px;
-  width: 200px;
-}
-
-#scroll-section .btn li .shop {
-  height: 170px;
-  width: 200px;
-}
-
-#scroll-section .btn li .categories {
-  position: absolute;
-  right: 0;
-  height: 270px;
-  width: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 150px;
-  text-align: left;
-}
-
-#scroll-section .btn li .submenu {
   overflow: hidden;
   position: absolute;
-  top: 57px;
-  background-color: whitesmoke;
+  margin-top: 10px;
+  background-color: white;
   height: 0;
+  width: 150px;
   line-height: 40px;
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
-  border-radius: 5px;
-  z-index: 2;
-}
-
-#scroll-section .btn li .submenu > li {
-  display: block;
   text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
 }
 
-#scroll-section .btn li .submenu a {
-  color: black;
-  margin-top: 20px;
+#scroll-section .btn li .home a {
+  color: #000;
   font-size: 16px;
   text-decoration: none;
 }
 
-#scroll-section .btn li .submenu a:hover {
-  text-decoration: none;
-}
-
-#scroll-section .btn li .submenu .product1 {
-  padding-top: 20px;
-}
-
-#scroll-section .btn li .submenu .product1 h5 {
-  text-align: left;
-}
-
-#scroll-section .btn li .hov {
-  font-size: 18px;
-  color: white;
-  display: block;
-  padding: 0 7px 0 7px;
-  margin: 0 0 10px;
-  text-decoration: none;
-  position: relative;
-}
-
-#scroll-section .btn li .hov::before {
-  content: "";
+#scroll-section .btn li .submenu {
+  overflow: hidden;
   position: absolute;
-  width: 100%;
-  height: 5px;
-  bottom: -20px;
-  left: 0px;
-  background-color: orange;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform: scale(0, 0);
-          transform: scale(0, 0);
-  visibility: hidden;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 165px;
+  line-height: 40px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+#scroll-section .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#scroll-section .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -220px;
+  border-radius: 10px;
+}
+
+#scroll-section .btn li .categori table td {
+  border: none;
+}
+
+#scroll-section .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+
+#scroll-section .btn li .categori table th:hover {
+  color: #000;
+}
+
+#scroll-section .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
 }
 
 #intro-slider {

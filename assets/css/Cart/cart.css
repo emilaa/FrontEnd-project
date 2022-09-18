@@ -462,4 +462,9 @@
   padding-top: 19px;
   color: white;
 }
+
+#basket .my-container {
+  width: 97%;
+  margin: auto;
+}
 /*# sourceMappingURL=cart.css.map */
